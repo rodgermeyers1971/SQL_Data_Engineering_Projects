@@ -7,7 +7,7 @@
 - **Why?**
     - Retrieves the top 10 skills with the highest demand in the remote job market, providing insights into the most valuable skills for data engineers seeking remote work
 */
-
+/* added comment to test git */
 SELECT
   s.skills,
   COUNT(f.job_id) AS demand_count

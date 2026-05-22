@@ -13,9 +13,9 @@ A SQL project analyzing the data engineer job market using real world job postin
 
 If you only have a minute, review these:
 
-1. [Top Demanded Skills Query](1_EDA\01_top_demanded_skills.sql)
-2. [Top Paying Skills Query](1_EDA\02_top_paying_skills.sql)
-3. [Optimal Skills Query](1_EDA\03_optimal_skills.sql)
+1. [Top Demanded Skills Query](01_top_demanded_skills.sql)
+2. [Top Paying Skills Query](02_top_paying_skills.sql)
+3. [Optimal Skills Query](03_optimal_skills.sql)
 
 ## Problem and Context
 
@@ -31,7 +31,7 @@ This project analyzes a **data warehouse** built using a star-schema design.  Th
 
 - **Fact Table:** `job_postings_fact`~ - Central table containing job posting details (job titles, locations, salaries, dates, etc.)
 - **Dimension Tables:**
-    - `company_dim` - Company information linked to job posings
+    - `company_dim` - Company information linked to job postings
     - `skills_dim` = Skills catalog with skill names and type
     - **Bridge Table:** `skills_job_dim` - Resolves them many-to-many relationship between job postings and skills
 
@@ -49,9 +49,9 @@ By querying across these interconnected tables, I extracted insights about skill
 
 ### Query Structure
 
-1. **[Top Demanded Skills Query](1_EDA\01_top_demanded_skills.sql)** - Identifies the 10 most in-demand skills for remote data engineer positions
-2. **[Top Paying Skills Query](1_EDA\02_top_paying_skills.sql)** - Analyzes the 25 highest-paying skills with salary and demand metrics
-3. **[Optimal Skills Query](1_EDA\03_optimal_skills.sql)** - Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
+1. **[Top Demanded Skills Query](01_top_demanded_skills.sql)** - Identifies the 10 most in-demand skills for remote data engineer positions
+2. **[Top Paying Skills Query](02_top_paying_skills.sql)** - Analyzes the 25 highest-paying skills with salary and demand metrics
+3. **[Optimal Skills Query](03_optimal_skills.sql)** - Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
 
 ### Key Insights
 
